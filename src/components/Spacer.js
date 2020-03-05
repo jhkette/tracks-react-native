@@ -2,9 +2,11 @@ import React from 'react';
 import {View, Text,StyleSheet} from 'react-native';
 
 const Spacer = ({children}) => {
-    return <View style={styles.spacer}>
-
-        {children}</View>
+    return (
+    <View style={styles.spacer}>
+        {children}
+    </View>
+    )
 }
 
 
