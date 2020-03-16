@@ -1,8 +1,7 @@
-
-import React, {useContext} from 'react';
-import { Text, TouchableOpacity, StyleSheet } from 'react-native';
-import Spacer from './Spacer';
-import { withNavigation } from 'react-navigation';
+import React, { useContext } from "react";
+import { Text, TouchableOpacity, StyleSheet } from "react-native";
+import Spacer from "./Spacer";
+import { withNavigation } from "react-navigation";
 
 // USing with navigation means our component
 // will have direct access to navigation prop
@@ -20,7 +19,7 @@ const NavLink = ({ navigation, text, routeName }) => {
 
 const styles = StyleSheet.create({
   link: {
-    color: 'blue'
+    color: "blue"
   }
 });
 

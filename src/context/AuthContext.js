@@ -27,7 +27,7 @@ const signup = dispatch => async ({ email, password }) => {
     await AsyncStorage.setItem("token", response.data.token);
     // dispatch to signin with token
     dispatch({ type: "signin", payload: response.data.token });
-    // 
+    //
     navigate("TrackList");
   } catch (err) {
     dispatch({
@@ -68,9 +68,9 @@ const tryLocalSignin = dispatch => {
 
 const signout = dispatch => {
   return async () => {
-    await AsyncStorage.removeItem('token')
-    dispatch({type: 'signout'})
-    navigate('loginFlow')
+    await AsyncStorage.removeItem("token");
+    dispatch({ type: "signout" });
+    navigate("loginFlow");
   };
 };
 
