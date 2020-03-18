@@ -7,7 +7,7 @@ import NavLink from "../components/NavLink";
 import { NavigationEvents } from "react-navigation";
 
 const SigninScreen = ({ navigation }) => {
-  const { state, signin, clearErrorMessage } = useContext(AuthContext);
+  const { signin, clearErrorMessage } = useContext(AuthContext);
   return (
     <View style={styles.container}>
       <NavigationEvents onWillBlur={clearErrorMessage} />
