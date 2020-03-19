@@ -1,7 +1,9 @@
 import * as Location from 'expo-location';
 
 const tenMetersWithDegrees = 0.0001;
-
+// This is just a function that gets called
+// by anonymous setInterval function
+// to change location. Gets used by map
 const getLocation = increment => {
   return {
     timestamp: 10000000,
