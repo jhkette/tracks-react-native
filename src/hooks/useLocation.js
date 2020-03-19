@@ -13,7 +13,7 @@ export default (shouldTrack, callback) => {
   const [err, setErr] = useState(null);
   
   // this useeffect hook runs at start and any
-  // time the shouldTrack value in the array changes.
+  // time the shouldTrack or callback value in the array changes.
   // should track has a boolean value
   // return a cleanup function to stop listening if useeffect
   //gets called a second time. This means it will
